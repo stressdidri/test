@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://none.none/"
+        id        = "com.ghidulfocsaniului.info"
+        versionCode="16" 
+        version   = "1.5.2">
+    <name>Focsani</name>
+    <description>
+        Un mic ghid al orasului Fosani si-al judetului Vrancea 
+    </description>
+    <author href="http://none.none" email="tudorache_adrian24@yahoo.com">
+        Adrian Tudorache
+    </author>
+
+	
+<content src="index.html" />
+
+<preference name="phonegap-version" value="2.9.0" />
+<preference name="InAppBrowserStorageEnabled" value="true" />
+<preference name="splashscreen" value="splash" />
+<preference name="splash-screen-duration" value="15000" />
+	
+<!-- Setari -->
+<preference name="fullscreen" value="false" />
+<preference name="target-device" value="universal" />
+<preference name="prerendered-icon" value="true" />
+<preference name="stay-in-webview" value="true" />
+<preference name="disable-cursor" value="true" />
+	  
+<feature name="PushPlugin">
+    <param name="android-package" value="com.plugin.gcm.PushPlugin" />
+</feature> 
+	  
+<!-- Icoane -->
+<icon src="images/icons/icon_072.png" gap:role="default" width="72" height="72"/>
+<icon src="images/icons/icon_048.png" width="48" height="48" />
+<icon src="images/icons/icon_036.png" width="36" height="36" />
+<icon src="images/icons/icon_072.png" gap:platform="android" gap:density="ldpi" /><!-- Android -->
+
+
+<gap:splash src="images/splash/screen-ldpi-portrait.png"   gap:platform="android" gap:density="ldpi" />
+<gap:splash src="images/splash/screen-ldpi-landscape.png"  gap:platform="android" gap:density="ldpi" />
+<gap:splash src="images/splash/screen-mdpi-portrait.png"   gap:platform="android" gap:density="mdpi" />
+<gap:splash src="images/splash/screen-mdpi-landscape.png"  gap:platform="android" gap:density="mdpi" />
+<gap:splash src="images/splash/screen-hdpi-portrait.png"   gap:platform="android" gap:density="hdpi" />
+<gap:splash src="images/splash/screen-hdpi-landscape.png"  gap:platform="android" gap:density="hdpi" />
+<gap:splash src="images/splash/screen-xhdpi-portrait.png"  gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="images/splash/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" />
+
+
+<access origin="http://127.0.0.1*" />
+
+<access origin="*.google.com" />
+<access origin="*.gstatic.com" />
+<access origin="*.googleapis.com" />
+<access origin="*.googleusercontent.com" />
+
+<access origin="aripioarepicante.ro" subdomains="true"/>
+<access origin="google.com" subdomains="true"/>
+<access origin="gstatic.com" subdomains="true"/>
+<access origin="googleapis.com" subdomains="true"/>
+<access origin="googleusercontent.com" subdomains="true"/>
+<access origin="http://91.202.88.66/" subdomains="true"/>
+<access origin="http://maps.google.com" />
+<access origin="http//maps.gstatic.com" />
+<access origin="http://maps.googleapis.com" />
+<access origin="http://fonts.googleapis.com" />
+<access origin="http://mt0.googleapis.com" />
+<access origin="http://khm1.googleapis.com" />
+<access origin="http://kmh0.googleapis.com" />
+<access origin="https://*.google.com" />
+<access origin="https//*.gstatic.com" />
+<access origin="https://*.googleapis.com" />
+<access origin="https://cp.pushwoosh.com" subdomains="true" />
+<access origin="*.cp.pushwoosh.com" />
+<!--<access origin="*" />-->
+
+<plugins>
+<gap:plugin name="com.pushwoosh.plugins.pushwoosh" />
+<plugin name="Storage" value="org.apache.cordova.Storage" />
+<plugin name="File" value="org.apache.cordova.FileUtils" />
+<plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />
+<plugin name="Geolocation" value="CDVLocation" />
+<plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
+<plugin name="App" value="org.apache.cordova.App"/>
+<plugin name="Device" value="org.apache.cordova.Device"/>
+<plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager"/>
+<plugin name="Notification" value="org.apache.cordova.Notification"/>
+<plugin name="GAPlugin" value="com.adobe.plugins.GAPlugin"/>
+<plugin name="PushPlugin" value="com.plugin.gcm.PushPlugin" />
+<plugin name="GCMPlugin" value="com.plugin.GCM.GCMPlugin" />
+<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
+	
+<!--<plugin name="PushNotification" value="com.pushwoosh.plugin.pushnotifications.PushNotifications" onload="true"/>-->
+</plugins>
+</widget>

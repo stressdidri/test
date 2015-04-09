@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ghidul Focsaniului - Beta</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="Tudorache Adrian">
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+    </script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- css -->
+
+<link rel="stylesheet" href="js/portfolio/photoswipe.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Scripts -->
+<script src="js/core-1.8.2.min.js"></script>
+<script src="js/jquery.mobile-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/portfolio/klass.min.js"></script>
+<script type="text/javascript" src="js/portfolio/code.photoswipe.jquery-3.0.4.min.js"></script>
+<script src="js/slider/jquery.flexslider-min.js"></script>
+<script src="js/custom.js"></script>
+<!-- Stare Conexiune  -->
+
+<script type="text/javascript" src="cordova.js"></script>
+
+<link rel="stylesheet" href="css/fix.css">
+
+</head>
+<body>
+<div data-role="page"> 
+  
+  <!-- header -->
+  <div data-role="header" class="page-header" data-position="fixed">
+    <h1>Ghidul Focsaniului BETA</h1>
+	<div class="logo"></div>
+  </div>
+  <!--/header --> 
+  <div class="main">
+  <!-- slider -->
+  <div class="flex-container">
+    <div class="flexslider">
+      <ul class="slides">
+        <li> <img src="images/galerie/focsani/foc2.jpg" alt="slide"> </li>
+        <li> <img src="images/galerie/focsani/foc3.jpg" alt="slide"> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /slider --> 
+    <!-- social -->
+  <div class="social"> <a href="#"><img src="images/social/facebook.png" alt="facebook"> </a> <a href="#"><img src="images/social/google.png" alt="google"></a> </div>
+  <!-- /social --> 
+  <!-- main content -->
+  <div data-role="content">
+  <div class="intro">
+  <h2>Focsani , Vrancea</h2>
+    <p>
+	&nbsp; &nbsp; &nbsp; <span class="blue">APLICATIA</span> e in stadiul Beta si e prezenta in Google Play pentru a optine un  <span class="blue">Feed-Back</span>. Practic vreau doar sa vad daca intereseaza pe cineva o aplicatie de genul.
+	<br /><br />
+	<span class="blue">Multumesc anticipat si tin sa precizez ca oricine vrea sa contribuie e binevenit sa ma contacteze.</span>
+	<br /><br />
+	<span class="blue">Dar sa revin la subiect...</span>
+	<br /><br />
+	&nbsp; &nbsp; &nbsp; Orasul <span class="blue">Focsani</span> este un municipiu, reședința și cel mai mare oraș al județului Vrancea la limita între regiunile istorice Moldova și Muntenia din România. Are o populație de 79.315 locuitori.
+	<br />
+	&nbsp; &nbsp; &nbsp;Este denumit în multe scrieri Orașul de pe Milcov, localitatea a intrat în conștiința oamenilor drept orașul Unirii. Toponomia orașului Focșani se trage de la numele familie Focșa. Până la începutul secolul al XVII-lea, era consemnat ca sat, iar după anii 1650-1620 se menționează denumirea de târg, aflându-se la confluența drumurilor comerciale ce unesc Țara Românească cu Moldova.
+	</p>
+    <p class="quote">Fie ca esti vizitator sau nu Focsaniul are multe lucruri interesante de oferit.</p>
+   <hr class="blankseparator"/></hr>
+   </div>
+   
+  <div data-role="controlgroup" >
+      <ul data-role="listview" data-inset="true" id="listview">
+        <li><a href="istoric.html" data-prefetch data-transition="slide">Istoric</a></li>
+        <li><a href="informatii.html" data-prefetch data-transition="slide">Informatii</a></li>
+        <li><a href="comercial.html" data-prefetch data-transition="slide">Comercial</a></li>
+		<li><a href="game.html" data-prefetch data-transition="slide">joculet</a></li>
+		<li><a href="http://91.202.88.66/" data-prefetch data-transition="slide">PC</a></li>
+      </ul>
+    </div>
+	
+	<!-- <a href="#" title="" class="buttonhome">&rarr; download</a> -->
+    
+	<hr class="blankseparator"/></hr>
+    <!-- list begins -->
+    <div class="alist" style="margin-bottom:0px">
+      
+	  <h3>Ultimile Actualizari</h3>
+	  <p class="quote">Noi pagini sunt adaugate sau modicate aprope zilnic asa ca va rugam sa faceti update cat mai des cu putinta.</p>
+
+      <div class="thumbnail-list">
+        <ul  data-inset="true" data-role="listview" data-filter-theme="f" >
+         
+		 <li class="ui-btn-icon-right">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+              <div class="ui-btn-text"> <a class="ui-link-inherit" href="aripioare_picante.html" data-transition="slide"> <img class="ui-li-thumb" src="images/media/mancare/aripioare_picante/aripioare_picante_thumb.jpg" alt="">
+                <h3 class="ui-li-heading">Aripioare Picante</h3>
+                <p class="ui-li-desc">Aripioare picante la cuptor , sau aripioare pane , vestitele crispy</p>
+                </a> </div>
+              <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span> </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- list ends -->
+    <hr class="blankseparator"/>
+    <div class="quote1">
+	Sponsori...
+    </div>
+    <!-- end quote --> 
+    
+
+	
+    <div id="loading"></div>
+    <div id="loading1"></div>
+    <div id="loading2"></div>
+    <div id="loading3"></div>
+    <div id="loading4"></div>
+    <div id="loading5"></div>
+    <div id="loading6"></div>
+    <div id="loading7"></div>
+    <div id="loading8"></div>
+    <div id="loading9"></div>
+	
+  </div>
+  <!-- /main content --> 
+ </div>
+  <!-- footer -->
+<div data-role="footer" class="footer" data-position="fixed">
+    <div data-role="navbar" class="navbar" data-grid="c">
+      <ul>
+        <li><a href="https://maps.google.com/maps?q=Foc%C8%99ani,+Jude%C8%9Bul+Vrancea,+Romania&hl=en&ie=UTF8&ll=45.697667,27.179146&spn=0.091121,0.160675&sll=37.0625,-95.677068&sspn=49.089956,92.021484&oq=focsani&t=h&hnear=Foc%C8%99ani,+Focsani,+Jude%C8%9Bul+Vrancea,+Romania&z=13" data-theme="c">Harta</a></li>
+        <li><a href="informatii.html" data-theme="c">Util</a></li>
+        <li><a href="galerie_focsani.html" data-theme="c">Galerie</a></li>
+        <li><a href="informatii.html" data-theme="c">Despre</a></li>
+      </ul>
+    </div>
+	</div>
+  <!-- /footer -->
+</div>
+<!-- /page -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ghidul Focsaniului - Beta</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="Tudorache Adrian">
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+    </script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js/portfolio/photoswipe.css">
+
+<!-- Scripts -->
+<script src="js/core-1.8.2.min.js"></script>
+<script src="js/jquery.mobile-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/portfolio/klass.min.js"></script>
+<script type="text/javascript" src="js/portfolio/code.photoswipe.jquery-3.0.4.min.js"></script>
+<script src="js/slider/jquery.flexslider-min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/jquery.transit.min.js"></script>
+
+</head>
+<body>
+<div data-role="page"> 
+  
+  <!-- header -->
+  <div data-role="header" class="page-header" data-position="fixed">
+    <h1>Ghidul Focsaniului</h1>
+  </div>
+  <!--/header --> 
+  <div class="main">
+  <!-- slider -->
+  <div class="flex-container">
+    <div class="flexslider">
+      <ul class="slides">
+        <li> <img src="images/media/pagini/focsani1.jpg" alt="slide"></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /slider --> 
+  
+  <!-- social -->
+  <div class="social"> <a href="#"><img src="images/social/facebook.png" alt="facebook"></a> <a href="#"><img src="images/social/twitter.png" alt="twitter"></a> <a href="#"><img src="images/social/google.png" alt="google"></a> <a href="#"><img src="images/social/dribbble.png" alt="dribble"></a> <a href="#"><img src="images/social/pinterest.png" alt="pintarest"></a> </div>
+  <!-- /social --> 
+  
+  <!-- main content -->
+  <div data-role="content">
+     
+	 <p>Mancarea din focsani</p>
+
+    <div class="alist" style="margin-bottom:0px">
+      <div class="thumbnail-list">
+        <ul  data-inset="true" data-role="listview" data-filter-theme="f" >
+          <li class="ui-btn-icon-right">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+              <div class="ui-btn-text"> <a class="ui-link-inherit" href="blogsingle.html"> <img class="ui-li-thumb" src="images/media/mancare/fast-food.jpg" alt="">
+                <h3 class="ui-li-heading">Fast-Food</h3>
+                <p class="ui-li-desc">Rapid dar bun</p>
+                </a> </div>
+              <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span> </div>
+          </li>
+          <li class="ui-btn-icon-right">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+              <div class="ui-btn-text"> <a class="ui-link-inherit" href="blogsingle.html"> <img class="ui-li-thumb" src="images/media/mancare/restaurante.jpg" alt="">
+                <h3 class="ui-li-heading">Restaurante</h3>
+                <p class="ui-li-desc">Select si rafinat</p>
+                </a> </div>
+              <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span> </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- list ends -->
+    <hr class="blankseparator"/>
+    
+  </div>
+  <!-- /main content --> 
+  </div>
+  <!-- footer -->
+  <div data-role="footer" class="footer" data-position="fixed">
+    <div data-role="navbar" class="navbar" data-grid="c">
+      <ul>
+        <li><a href="http://maps.google.com/" data-theme="c">Map</a></li>
+        <li><a href="videos.html" data-theme="c">Videos</a></li>
+        <li><a href="gallery.html" data-theme="c">Gallery</a></li>
+        <li><a href="services.html" data-theme="c">Services</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- /footer --> 
+</div>
+<!-- /page -->
+</body>
+</html>

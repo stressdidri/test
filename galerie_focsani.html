@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>Galerie Focsani</title>
+<meta name="description" content="Galerie Foto Focsani">
+<meta name="author" content="Tudorache Adrian">
+
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+    </script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- css -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js/portfolio/photoswipe.css">
+
+<!-- Scripts -->
+<script src="js/core-1.8.2.min.js"></script>
+<script src="js/jquery.mobile-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/portfolio/klass.min.js"></script>
+<script type="text/javascript" src="js/portfolio/code.photoswipe.jquery-3.0.4.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- Stare Conexiune  -->
+<link rel="stylesheet" href="css/html5demos.css">
+<script src="js/h5utils.js"></script>
+
+<script src="js/jquery.transit.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div data-role="page"> 
+  <!-- header -->
+  <div data-role="header" data-position="fixed" class="buttons" data-add-back-btn="true"> 
+  <a href="index.html" data-role="button" data-theme="b" data-rel="back" data-inline="true" data-icon="arrow-l" data-iconpos="notext">Home</a> 
+  <a href="index.html" data-role="button" data-theme="b" data-rel="back" data-inline="true" data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a> 
+  <h1>Galerie Foto</h1>
+  </div>
+  <!--/header -->
+
+
+<p align="center" >Stare conexiune la internet:<span id="status">Se verifica...</span></p>
+<script>
+var statusElem  = document.getElementById('status'),
+    state 		= document.getElementById('state');
+
+function online(event) {
+  statusElem.className = navigator.onLine ? 'online' : 'offline';
+  statusElem.innerHTML = navigator.onLine ? 'conectat' : 'deconectat';
+}
+addEvent(window, 'online', online);
+addEvent(window, 'offline', online);
+online({ type: 'ready' });
+</script>
+  
+  <!-- main content --> 
+  <!-- social -->
+  <div class="social"> <a href="#"><img src="images/social/facebook.png" alt="facebook"></a> <a href="#"><img src="images/social/twitter.png" alt="twitter"></a> <a href="#"><img src="images/social/google.png" alt="google"></a> <a href="#"><img src="images/social/dribbble.png" alt="dribble"></a> <a href="#"><img src="images/social/pinterest.png" alt="pintarest"></a> </div>
+  <!-- /social -->
+  <div data-role="content" class="portfolio">
+
+	
+	<ul id="gallery">
+      <li><a href="images/galerie/focsani/foc1.jpg" rel="external"><img src="images/galerie/focsani/thumb/foc1.jpg" alt="Title"/></a></li>
+      <li><a href="images/galerie/focsani/foc2.jpg" rel="external"><img src="images/galerie/focsani/thumb/foc2.jpg" alt="Title"/></a></li>
+      <li><a href="images/galerie/focsani/foc3.jpg" rel="external"><img src="images/galerie/focsani/thumb/foc3.jpg" alt="Title"/></a></li>
+      <li><a href="images/galerie/focsani/foc4.jpg" rel="external"><img src="images/galerie/focsani/thumb/foc4.jpg" alt="Title"/></a></li>
+      <li><a href="images/galerie/focsani/foc5.jpg" rel="external"><img src="images/galerie/focsani/thumb/foc5.jpg" alt="Title"/></a></li>
+	  <li><a href="images/galerie/focsani/foc6.jpg" rel="external"><img src="images/galerie/focsani/thumb/foc6.jpg" alt="Title"/></a></li> 
+    </ul>
+	<br />
+	<br />
+  </div>
+  <!-- /main content --> 
+  <!-- footer -->
+<div data-role="footer" class="footer" data-position="fixed">
+    <div data-role="navbar" class="navbar" data-grid="c">
+      <ul>
+        <li><a href="https://maps.google.com/maps?q=Foc%C8%99ani,+Jude%C8%9Bul+Vrancea,+Romania&hl=en&ie=UTF8&ll=45.697667,27.179146&spn=0.091121,0.160675&sll=37.0625,-95.677068&sspn=49.089956,92.021484&oq=focsani&t=h&hnear=Foc%C8%99ani,+Focsani,+Jude%C8%9Bul+Vrancea,+Romania&z=13" data-theme="c">Harta</a></li>
+        <li><a href="videos.html" data-theme="c">Videos</a></li>
+        <li><a href="galerie_focsani.html" data-theme="c">Galerie</a></li>
+        <li><a href="services.html" data-theme="c">Services</a></li>
+      </ul>
+    </div>
+  <!-- /footer --> 
+  
+</div>
+<!-- /page -->
+</body>
+</html>
